@@ -1,0 +1,25 @@
+ADDITION OF ARRAY   ELEMENTS   :
+
+import java.util.Scanner;
+class Main {
+        public static void main(String args[])
+        {
+            Scanner sc=new Scanner(System.in);
+            int i,sum=0;
+            int n=sc.nextInt();
+            int arr[]=new int[n];
+            for(i=0;i<n;i++)
+            {
+                arr[i]=sc.nextInt();
+            }
+            for(i=0;i<n;i++)
+            {
+                sum=sum+arr[i];
+            }
+          System.out.println(sum);
+        }
+    }
+OUTPUT  :
+5
+10 20 30 40 50
+150
