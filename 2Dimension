@@ -1,0 +1,27 @@
+
+TWO DIMENSIONAL ARRAY   :
+import java.util.Scanner;
+import java.util.Arrays;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+	     int nsub=sc.nextInt();
+	     int mark[]=new int[nsub],i;
+	     for(i=0;i<nsub;i++)
+	     {
+	         mark[i]=sc.nextInt();
+	     }
+	     for(i=0;i<nsub;i++)
+	     {
+	         System.out.println(Arrays.toString(mark));
+	     }
+	}
+}
+OUTPUT   :
+3
+10 20 30
+[10, 20, 30]
+[10, 20, 30]
+[10, 20, 30]
