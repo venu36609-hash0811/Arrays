@@ -1,0 +1,28 @@
+MINIMUM NUMBER IN ARRAY  :
+import java.util.Scanner;
+class Main
+    {
+        public static void main(String args[])
+        {
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt(),min,i;
+            int arr[]=new int[n];
+            for(i=0;i<n;i++)
+            {
+                arr[i]=sc.nextInt();            
+             }
+            min=arr[0];
+           for(i=1;i<n;i++)
+           {
+            if(min>arr[i])
+            {
+                min=arr[i];
+            }
+           }
+         System.out.println(min);
+        }
+    }
+OUTPUT  :
+5
+10 20 30 40 50
+10
