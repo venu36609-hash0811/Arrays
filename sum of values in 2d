@@ -1,0 +1,42 @@
+SUM OF VALUES IN ARRAYS  :
+[ SUM OF ROWS IN 2D MATRIX]  :
+
+import java.util.Scanner;
+import java.util.Arrays;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+        int nrow=sc.nextInt();
+        int ncol=sc.nextInt(),row,col,sum;
+        int mat[][]=new int[nrow][ncol];
+        for(row=0;row<nrow;row++)
+        {
+            for(col=0;col<ncol;col++)
+            {
+                mat[row][col]=sc.nextInt();
+            }
+        }
+        for (row=0;row<nrow;row++)
+        {
+            sum=0;
+            for(col=0;col<ncol;col++)
+            {
+                sum=sum+mat[row][col];
+            }
+            System.out.println(sum);
+        }
+        
+	}
+
+}
+OUTPUT   :
+3
+3
+1 2 3 
+4 5 6 
+7 8 8 9
+6
+15
+24
